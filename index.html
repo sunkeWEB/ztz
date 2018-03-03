@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>众泰钻</title>
+    <link rel="stylesheet" href="./common/base.css">
+    <link rel="stylesheet" href="./plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./plugin/swiper/swiper.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_577832_cfookxnhfnso47vi.css">
+    <style>
+        @media screen and (min-width: 1023px) {
+            html, body {
+                font-size: 30px;
+            }
+        }
+
+        @media screen and (max-width: 769px) {
+            html, body {
+                font-size: 24px;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            html, body {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            html, body {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            body {
+                font-size: 14px;
+            }
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .lists > div {
+            padding: 0.3rem;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 10rem;
+        }
+
+        .lists {
+            width: 25%;
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            box-sizing: border-box;
+            border-right: 1px solid #eee;
+        }
+
+        .lists-items {
+            text-align: center;
+        }
+
+        .lists-items img {
+            width: 3rem;
+            height: 3rem;
+            text-align: center;
+        }
+
+        .lists-items i {
+            font-size: 3.1rem;
+            text-align: center;
+        }
+
+        .lists-items-div {
+            width: 4rem;
+            height: 4rem;
+            /*background-color: deepskyblue;*/
+            border-radius: 50%;
+        }
+
+        .lists-items-name {
+            font-size: 0.8rem;
+            color: black !important;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            border-top: 1px solid #eee;
+            box-sizing: border-box;
+        }
+
+        .footer > div {
+            flex: 1;
+            text-align: center;
+        }
+
+        .iconbar i {
+            font-size: 1.6rem;
+        }
+
+        .footer > div:not(:last-child) {
+            border-right: 1px solid #eeeeee;
+            box-sizing: border-box;
+        }
+
+        .box-msg {
+            background-color: red;
+            border-radius: 50%;
+            width: 1.3rem;
+            height: 1.3rem;
+            position: absolute;
+            top: 0.2rem;
+            right: 0.2rem
+        }
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./common/image/swiper1.jpg_.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./common/image/swiper2.jpg_.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./common/image/swiper3.jpg_.webp" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="lists">
+            <div class="lists-items">
+                <div class="lists-items-div" style="display: flex;justify-content: center;align-items: center">
+                    <!--<img src="./common/image/xxx.jpg_.webp" alt="">-->
+                    <i class="iconfont icon-caifu" style="color: coral"></i>
+                </div>
+                <div class="lists-items-name">财富管理</div>
+            </div>
+        </div>
+        <div class="lists">
+            <div class="lists-items">
+                <a href="tjcard.html">
+                    <div class="lists-items-div" style="display: flex;justify-content: center;align-items: center">
+                        <i class="iconfont icon-tuijian" style="color: deepskyblue"></i>
+                        <!--<img src="./common/image/xxx.jpg_.webp" alt="">-->
+                    </div>
+                    <div class="lists-items-name">推荐管理</div>
+                </a>
+            </div>
+        </div>
+        <div class="lists">
+            <div class="lists-items">
+                <a href="adders.html">
+                    <div class="lists-items-div" style="display: flex;justify-content: center;align-items: center">
+                        <!--<img src="./common/image/xxx.jpg_.webp" alt="">-->
+                        <i class="iconfont icon-dizhiguanli" style="color: red"></i>
+                    </div>
+                    <div class="lists-items-name">地址管理</div>
+                </a>
+            </div>
+        </div>
+        <div class="lists">
+            <div class="lists-items">
+                <div class="lists-items-div" style="display: flex;justify-content: center;align-items: center">
+                    <!--<img src="./common/image/xxx.jpg_.webp" alt="">-->
+                    <i class="iconfont icon-database" style="color: lightsalmon"></i>
+                </div>
+                <div class="lists-items-name">数据库</div>
+            </div>
+        </div>
+        <div class="lists">
+            <div class="lists-items">
+                <a href="company.html">
+                    <div class="lists-items-div" style="display: flex;justify-content: center;align-items: center">
+                        <!--<img src="./common/image/xxx.jpg_.webp" alt="">-->
+                        <i class="iconfont icon-company" style="color: darkcyan"></i>
+                    </div>
+                    <div class="lists-items-name">公司简介</div>
+                </a>
+            </div>
+        </div>
+        <div class="lists">
+            <div class="lists-items">
+                <a href="college.html">
+                    <div class="lists-items-div" style="display: flex;justify-content: center;align-items: center">
+                        <!--<img src="./common/image/xxx.jpg_.webp" alt="">-->
+                        <i class="iconfont icon-xueyuan" style="color:brown"></i>
+                    </div>
+                    <div class="lists-items-name">商学院</div>
+                </a>
+            </div>
+        </div>
+        <div class="lists">
+            <div class="lists-items">
+                <a href="kefu.html">
+                    <div class="lists-items-div" style="display: flex;justify-content: center;align-items: center">
+                        <!--<img src="./common/image/xxx.jpg_.webp" alt="">-->
+                        <i class="iconfont icon-kefu32px" style="color: crimson"></i>
+                    </div>
+                    <div class="lists-items-name">客服服务</div>
+                </a>
+            </div>
+        </div>
+        <div class="lists">
+            <div class="lists-items">
+                <a href="fenxian.html">
+                    <div class="lists-items-div" style="display: flex;justify-content: center;align-items: center">
+                        <!--<img src="./common/image/xxx.jpg_.webp" alt="">-->
+                        <i class="iconfont icon-fenxiang" style="color: yellowgreen"></i>
+                    </div>
+                    <div class="lists-items-name">分享好友</div>
+                </a>
+            </div>
+        </div>
+        <div class="lists">
+            <div class="lists-items">
+                <a href="msg.html">
+                    <div class="lists-items-div"
+                         style="display: flex;justify-content: center;align-items: center;position: relative">
+                        <!--<img src="./common/image/xxx.jpg_.webp" alt="">-->
+                        <i class="iconfont icon-xitongxiaoxi" style="color: darkorange"></i>
+                        <div class="box-msg">
+                            <span style="color: white">5</span>
+                        </div>
+                    </div>
+                    <div class="lists-items-name">消息</div>
+                </a>
+            </div>
+        </div>
+        <div class="lists">
+            <div class="lists-items">
+                <div class="lists-items-div" style="display: flex;justify-content: center;align-items: center">
+                    <!--<img src="./common/image/xxx.jpg_.webp" alt="">-->
+                    <i class="iconfont icon-touruguize" style="color: tomato"></i>
+                </div>
+                <div class="lists-items-name">平台规则</div>
+            </div>
+        </div>
+        <div class="lists">
+            <div class="lists-items">
+                <div class="lists-items-div" style="display: flex;justify-content: center;align-items: center">
+                    <!--<img src="./common/image/xxx.jpg_.webp" alt="">-->
+                    <i class="iconfont icon-bangzhu" style="color: #6ba4b1"></i>
+                </div>
+                <div class="lists-items-name">帮助中心</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <a href="#" >
+                <div class="iconbar"><i class="iconfont icon-home"></i></div>
+                <div class="lists-items-name">首页</div>
+            </a>
+        </div>
+        <div>
+            <a href="users.html">
+                <div class="iconbar"><i class="iconfont icon-gerenzhongxin"></i></div>
+                <div class="lists-items-name">个人中心</div>
+            </a>
+        </div>
+    </div>
+</div>
+<script src="plugin/jquery/jquery-3.3.1.min.js"></script>
+<script src="plugin/swiper/swiper.min.js"></script>
+<script>
+    $(function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: true,
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination'
+            }
+        })
+    });
+</script>
+</body>
+</html>

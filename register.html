@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>众泰钻--注册</title>
+    <link rel="stylesheet" href="./common/base.css">
+    <link rel="stylesheet" href="./plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./plugin/ichenk/skins/square/blue.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html,
+        body {
+            color: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            height: 100%;
+        }
+
+        .main{
+            width: 100%;
+            height: 100%;
+            background: url("./common/image/base.jpg") center top;
+            background-size: cover;
+        }
+
+        .content{
+            width: 90%;
+            max-width: 310px;
+            height: 400px;
+            background-color: hsla(0,0%,100%,.3);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -220px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            z-index: 100;
+            padding: 15px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .content:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("./common/image/base.jpg") center top;
+            background-size: cover;
+            background-attachment: fixed;
+            filter: blur(20px);
+            z-index: -1;
+            margin: -20px;
+        }
+        @media screen and (min-width:1800px) {
+            .content{
+                margin-left: -4%;
+            }
+            .main,.content:before{
+                background: none;
+            }
+        }
+        @media screen and (min-width:1023px) {
+            .content{
+                margin-left: -13%;
+            }
+        }
+        @media screen and (max-width:769px) {
+            .content{
+                margin-left: -18%;
+            }
+        }
+        @media screen and (max-width:450px) {
+            .content{
+                margin-left: -37%;
+            }
+        }
+        @media screen and (max-width:376px) {
+            .content{
+                margin-left: -41%;
+            }
+        }
+        @media screen and (max-width:320px) {
+            .content{
+                margin-left: -10%;
+            }
+        }
+        .yzcode {
+            display: flex;
+        }
+
+        .yzm {
+            width: 100px;
+            text-align: center;
+            line-height: 2.4;
+        }
+        .login,.register{
+            width: 100%;
+            margin-bottom: 8px;
+        }
+        .register{
+            margin-bottom: 4px;
+        }
+        .title{
+            color: #666666;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="content">
+        <div>
+            <div class="form-group">
+                <h4 class="title">会员注册</h4>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="account" placeholder="请输入登录账号">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="accountpwd" placeholder="请输入登录密码">
+            </div>
+            <div class="yzcode form-group">
+                <input type="text" class="form-control" placeholder="请输入验证码">
+                <div class="yzm">
+                    <div>123456</div>
+                </div>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" checked="checked" id="zdlogin"> 自动登录
+                </label>
+                <a href="">忘记密码 ?</a>
+            </div>
+            <button type="button" class="btn btn-primary register"  style="background-color: #009DDA">立即注册</button>
+            <button type="button" class="btn btn-primary login" style="background-color: #009DDA;margin-top: 4px">已有账号,立即登录</button>
+        </div>
+    </div>
+</div>
+<script src="plugin/jquery/jquery-3.3.1.min.js"></script>
+<script src="plugin/ichenk/icheck.min.js"></script>
+<script>
+    $(function () {
+        $('.login').click(function () {
+            location.href = 'login2.html';
+        })
+    });
+</script>
+</body>
+</html>

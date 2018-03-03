@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+    <title>众泰钻--登录</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html,
+        body {
+            font-size: 19px;
+            color: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            height: 100%;
+        }
+
+        .main{
+            width: 100%;
+            height: 100%;
+            background: url("./common/image/base.jpg") center top;
+            background-size: cover;
+        }
+
+        .content{
+            margin: 0 auto;
+            width: 320px;
+            /*max-width: 321px;*/
+            height: 400px;
+            background-color: hsla(0,0%,100%,.3);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /*margin-top: -220px;*/
+            /*margin-left: -39%;*/
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            z-index: 100;
+            padding: 50px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .content:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("./common/image/base.jpg") center top;
+            background-size: cover;
+            background-attachment: fixed;
+            filter: blur(20px);
+            z-index: -1;
+            margin: -20px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="content">
+        <h3>会员登录</h3>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>分享好友</title>
+    <link rel="stylesheet" href="./common/base.css">
+    <link rel="stylesheet" href="./plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_577832_k5flflx3vglgcik9.css">
+    <link rel="stylesheet" href="./plugin/animate/animate.css">
+    <link rel="stylesheet" href="./plugin/zoomify/dist/zoomify.min.css">
+    <style>
+        @media screen and (min-width: 1023px) {
+            html, body {
+                font-size: 35px;
+            }
+        }
+        @media screen and (max-width: 769px) {
+            html, body {
+                font-size: 30px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            html, body {
+                font-size: 24px;
+            }
+        }
+        @media screen and (max-width: 450px) {
+            html, body {
+                font-size: 18px;
+            }
+        }
+        @media screen and (max-width: 375px) {
+            html, body {
+                font-size: 16px;
+            }
+        }
+        @media screen and (max-width: 320px) {
+            body {
+                font-size: 14px;
+            }
+        }
+        .top {
+            height: 2.5rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-bottom: 1px solid #e9e9e9;
+            background-color: white;
+            z-index: 10;
+        }
+
+        .top-name {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 10px 15px;
+        }
+
+        .top-name .name {
+            flex: 1;
+            text-align: center;
+            margin-left: -20px;
+        }
+        .content{
+            margin-top: 4rem;
+            padding: 0.8rem;
+        }
+        .ljfxs{
+            width: 100%;
+            text-align: center;
+            text-align: -webkit-center;
+            margin: 0 auto  ;
+        }
+        .ljfx{
+            width: 8rem;
+            color: white;
+            background-color: red;
+            padding: 0.4rem;
+            border-radius: 4px;
+            margin-top: 0.8rem;
+        }
+        .img-code{
+            text-align: center;
+        }
+        .img-code img{
+            height: 7rem;
+            width: 7rem;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="top">
+        <div class="top-name">
+            <div class="back gotoback">
+                <i class="iconfont icon-zuo"></i>
+            </div>
+            <div class="name">
+                <span>分享好友</span>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="img-code">
+            <p>我的二维码</p>
+            <img id="img" src="./common/image/weixin.jpg" alt="">
+        </div>
+        <div class="ljfxs">
+            <div class="ljfx">
+                分享
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./plugin/jquery/jquery-3.3.1.min.js"></script>
+<script src="./plugin/zoomify/dist/zoomify.min.js"></script>
+<script src="common/common.js"></script>
+<script>
+    $(function () {
+        $('#img').click(function () {
+            $('#img').zoomify();
+        });
+    });
+</script>
+</body>
+</html>

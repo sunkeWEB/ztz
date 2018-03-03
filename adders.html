@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>地址管理</title>
+    <link rel="stylesheet" href="./common/base.css">
+    <link rel="stylesheet" href="./plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_577832_k5flflx3vglgcik9.css">
+    <link rel="stylesheet" href="./plugin/animate/animate.css">
+    <style>
+        @media screen and (min-width: 1023px) {
+            html, body {
+                font-size: 35px;
+            }
+        }
+        @media screen and (max-width: 769px) {
+            html, body {
+                font-size: 30px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            html, body {
+                font-size: 24px;
+            }
+        }
+        @media screen and (max-width: 450px) {
+            html, body {
+                font-size: 18px;
+            }
+        }
+        @media screen and (max-width: 375px) {
+            html, body {
+                font-size: 16px;
+            }
+        }
+        @media screen and (max-width: 320px) {
+            body {
+                font-size: 14px;
+            }
+        }
+        .top {
+            height: 2.5rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-bottom: 1px solid #e9e9e9;
+            background-color: white;
+            z-index: 10;
+        }
+
+        .top-name {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 10px 15px;
+        }
+
+        .top-name .name {
+            flex: 1;
+            text-align: center;
+            margin-left: -20px;
+        }
+        .content{
+            margin-top: 2.5rem;
+        }
+        .container{
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="top">
+        <div class="top-name">
+            <div class="back gotoback">
+                <i class="iconfont icon-zuo"></i>
+            </div>
+            <div class="name">
+                <span>地址管理</span>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="form-inline">
+                <div data-toggle="distpicker" class="distpickers">
+                    <div class="form-group">
+                        <label class="sr-only" for="province1">Province</label>
+                        <select class="form-control" id="province1"></select>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="city1">City</label>
+                        <select class="form-control" id="city1"></select>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="district1">District</label>
+                        <select class="form-control" id="district1"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input placeholder="请输入详细地址" class="form-control" style="" type="text">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="plugin/jquery/jquery-3.3.1.min.js"></script>
+<script src="plugin/bootstrap/js/bootstrap.min.js"></script>
+<script src="plugin/shengshiqu/js/distpicker.data.js"></script>
+<script src="plugin/shengshiqu/js/distpicker.js"></script>
+<script src="plugin/shengshiqu/js/main.js"></script>
+<script src="common/common.js"></script>
+</body>
+</html>

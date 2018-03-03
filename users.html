@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>个人中心</title>
+    <link rel="stylesheet" href="./common/base.css">
+    <link rel="stylesheet" href="./plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_577832_cfookxnhfnso47vi.css">
+    <link rel="stylesheet" href="./plugin/boostrapselect/bootstrap-select.min.css">
+    <style>
+
+        @media screen and (min-width: 1023px) {
+            html, body {
+                font-size: 30px;
+            }
+        }
+
+        @media screen and (max-width: 769px) {
+            html, body {
+                font-size: 24px;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            html, body {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            html, body {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            body {
+                font-size: 14px;
+            }
+        }
+
+        .top {
+            height: 2.5rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-bottom: 1px solid #e9e9e9;
+            background-color: white;
+            z-index: 10;
+        }
+
+        .top-name {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 10px 15px;
+        }
+
+        .top-name .name {
+            flex: 1;
+            text-align: center;
+            margin-left: -20px;
+        }
+
+        .content {
+            padding: 0.8rem;
+        }
+
+        .lists {
+            display: flex;
+            border-bottom: 1px solid #eeeeee;
+            padding: 0.4rem;
+        }
+
+        .lists div:first-child {
+            width: 7rem;
+        }
+
+        .lists div:last-child {
+            flex: 1;
+            text-align: right;
+        }
+
+        .title {
+            padding: 1rem 0.4rem 0.4rem 0.4rem;
+            font-size: 0.6rem;
+            color: #999999;
+            font-weight: 600;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        #selec {
+            height: 2.3rem;
+        }
+
+        .modal {
+            top: 27% !important;
+        }
+
+        .bootstrap-select {
+            width: 100% !important;
+        }
+
+        .modal-content {
+            /*max-width: 400px !important;*/
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            border-top: 1px solid #eee;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+
+        .footer > div {
+            flex: 1;
+            text-align: center;
+        }
+
+        .iconbar i {
+            font-size: 1.6rem;
+        }
+
+        .footer > div:not(:last-child) {
+            border-right: 1px solid #eeeeee;
+            box-sizing: border-box;
+        }
+
+        .lists-items-name {
+            font-size: 0.8rem;
+            color: black !important;
+        }
+        .useravatar {
+            width: 100%;
+            height: 8rem;
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .useravatar img {
+            width: 4rem;
+            height: 4rem;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="useravatar">
+        <div>
+            <img src="./common/image/xxx.jpg_.webp" alt="">
+        </div>
+    </div>
+    <div class="content">
+        <!--用户的账号信息 不可修改-->
+        <div class="zhxx">
+            <div class="title" style="padding-top: 0.4rem">账号信息</div>
+            <div class="lists">
+                <div>真实姓名</div>
+                <div>孙悟空</div>
+            </div>
+        </div>
+        <!--用户的资料 可修改-->
+        <div>
+            <div class="title">用户资料</div>
+            <div class="lists update" data-num="用户名" data-kokky="username">
+                <div>用户名</div>
+                <div>齐天大圣<i class="iconfont icon-you"></i></div>
+            </div>
+            <div class="lists update" data-num="性别">
+                <div>性别</div>
+                <div>
+                    男<i class="iconfont icon-you"></i>
+                </div>
+            </div>
+            <div class="lists update" data-num="电话号码" data-kokky="phone">
+                <div>电话号码</div>
+                <div>13639018324 <i class="iconfont icon-you"></i></div>
+            </div>
+            <div class="lists update" data-num="身份证" data-kokky="card">
+                <div>身份证</div>
+                <div>522422199510026418 <i class="iconfont icon-you"></i></div>
+            </div>
+        </div>
+        <!--用户在网站的注册信息-->
+        <div>
+            <div class="title">网站资料</div>
+            <div class="lists">
+                <div>注册时间</div>
+                <div>2018年8月8日</div>
+            </div>
+            <div class="lists">
+                <div>推荐人</div>
+                <div>13666666666</div>
+            </div>
+        </div>
+    </div>
+    <div class="logout" style="margin-top: 0.8rem;padding: 0.8rem;margin-bottom: 3.5rem">
+        <div style="width: 100%;background-color:orangered;text-align: center;border-radius: 4px;color: white;padding: 0.4rem;margin: 0 auto">退出登录</div>
+    </div>
+    <div class="footer">
+        <div>
+            <a href="index.html">
+                <div class="iconbar"><i class="iconfont icon-home"></i></div>
+                <div class="lists-items-name">首页</div>
+            </a>
+        </div>
+        <div class="activebar">
+            <a href="#">
+                <div class="iconbar"><i class="iconfont icon-gerenzhongxin"></i></div>
+                <div class="lists-items-name">个人中心</div>
+            </a>
+        </div>
+    </div>
+    <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="selecdiv">
+                        <select id="selec" style="width: 100%">
+                            <option value="1">男</option>
+                            <option value="2">女</option>
+                            <option value="3">保密</option>
+                        </select>
+                    </div>
+                    <input id="input" type="text" class="form-control">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="plugin/jquery/jquery-3.3.1.min.js"></script>
+<script src="plugin/layer/layer.js"></script>
+<script src="plugin/bootstrap/js/bootstrap.min.js"></script>
+<script src="plugin/boostrapselect/bootstrap-select.min.js"></script>
+<script src="common/common.js"></script>
+<script>
+    var value = '';
+    $(function () {
+        $('#selec').selectpicker({
+            style: 'btn-white',
+            size: 5
+        });
+        $('.update').click(function () {
+            var key = $(this).data('num');
+            $('#myModalLabel').text(key + "修改");
+            if (key == '性别') {
+                $('#selecdiv').show();
+                $('#input').hide();
+            } else {
+                value = $(this).data('kokky');
+                $('#input').addClass(value);
+                $('#input').show();
+                $('#selecdiv').hide();
+            }
+            $('#myModal').modal('toggle');
+        });
+        $('#myModal').on('hidden.bs.modal', function (e) {
+            $('#input').removeClass(value);
+        });
+        $('.logout').click(function () {
+           location.href='login2.html'
+        });
+    });
+</script>
+</body>
+</html>
